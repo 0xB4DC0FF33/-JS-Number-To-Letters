@@ -2,9 +2,10 @@ var unites = ['','un','deux','trois','quatre','cinq','six','sept','huit','neuf']
 var dizaines = ['','dix','vingt','trente','quarante','cinquante','soixante','soixante-dix', 'quatre-vingt','quatre-vingt-dix'];
 var dix = ['','onze','douze', 'treize','quatorze','quinze','seize']
 var cent = 'cent'
-var result = '';
 
 var nbr = parseInt(prompt("Entrez un nombre entre 1 et 999"), 10);
+
+var result = (nbr < 0)? 'moins ' : '';
 
 function splitNbr(nombre)
 {
